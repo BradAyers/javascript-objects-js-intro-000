@@ -6,9 +6,10 @@ function updatePlaylist(object, newArtist, newSong) {
 };
 
 function removeFromPlaylist(object, artist) {
-  console.log(object.artist);
+  //console.log(object.artist);
   object.artist = undefined;
-  console.log(object.artist);
+  //console.log(object.artist);
   delete object[artist];
-  console.log(object);
+  //console.log(object);
+  return object;
 }
